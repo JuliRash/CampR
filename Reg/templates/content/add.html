@@ -1,0 +1,65 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dl-r | add</title>
+</head>
+<body  style="background:url('{% static 'images/js.jpeg' %}') no-repeat center center; background-size: cover;">
+
+<section id="contact" class="home-section text-center">
+		<div class="heading-contact marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+	
+					<div class="section-heading">
+					<h2 class="tex">Add a member</h2>
+					<hr/>
+					</div>
+
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">  
+            <!--testing the form functionality-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add</title>
+</head>
+<body>
+<div class="container">  
+            <!--testing the form functionality-->
+{# load library #}
+{% load bootstrap3 %}
+{# load the css and javascript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+ <div class="row">
+        <div class="col-lg-8 col-md-offset-2">
+            <div class="boxed-grey">
+<form action="" method="post"  class="form">
+<br></br>
+    {% bootstrap_form form %}
+	{% csrf_token %}
+	{% buttons %}
+	{% bootstrap_button "Save" button_type="submit" button_class="btn-success" %}
+	
+	{% endbuttons %}
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
+	
+
+
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
